@@ -17,10 +17,14 @@
             </h1>
 
             <!-- salvo tutto il link in un data img1 -->
-            <img :src="img1" alt="">
+            <!-- <img :src="img1" alt=""> -->
 
             <!-- salvo solo una parto del link e poi lo aggiungo -->
-            <img :src=" 'images/' + img2" alt="">
+            <!-- <img :src=" 'images/' + img2" alt=""> -->
+            <!-- <img :src="img3" alt=""> -->
+
+            <!-- numero causale che va a selezionare un'umg casuale dalla mia cartella images -->
+            <img :src="'images/natura' + randomNumber() + '.jpg'" alt="">
         </div>
 
 
