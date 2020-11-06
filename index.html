@@ -16,6 +16,8 @@
                 {{text}}
             </h1>
 
+            <!-- quando clicko genero un nuovo numero random e quindi cambio img -->
+            <button @click="number = randomNumber() ">Cambia immagine</button>
             <!-- salvo tutto il link in un data img1 -->
             <!-- <img :src="img1" alt=""> -->
 
@@ -24,7 +26,7 @@
             <!-- <img :src="img3" alt=""> -->
 
             <!-- numero causale che va a selezionare un'umg casuale dalla mia cartella images -->
-            <img :src="'images/natura' + randomNumber() + '.jpg'" alt="">
+            <img :src="'images/natura' + number + '.jpg'" alt="">
         </div>
 
 
